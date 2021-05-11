@@ -12,6 +12,7 @@ In the "Color Counter (test)" tab you can predict what cards a player has.
 
 Check Wiki for more info on how to use it.
 
+You can find the precompiled here: /Uno Statistics Simulator/bin/Release/net5.0-windows/
 
 **TO DO:**
 
