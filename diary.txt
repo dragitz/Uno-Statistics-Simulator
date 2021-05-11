@@ -1,0 +1,36 @@
+Week 1 - "Setup the game structure"
+		 -Decide how to store data. (I opted for Json)
+		 -Add gui features and settings
+		 -Fix bugs
+		 
+Week 2 - "Game Ai"
+		This task is a hard one, I don't want to hard code a priority
+		I want to generate a statistical analisys and use it as a "database", so it should learn from that. I guess?
+		
+		I want to give basic informations to the Ai.
+		
+		Like what the top card is, the last 3-5 cards an enemy used (this will be used to count cards)
+		What last color a player placed. Eg. If I play a green card, it probably means that the green is what I'm looking for.
+		
+		
+		In the meantime here's what I've done so far for the Ai:
+		
+				- (Learning to get/set info from/to Json data)
+				- Understand who's next (need to verify that with the stepping feature)
+				- Check if the player has cards that can be placed. (setting flags)
+				
+				- Play a card.
+						It is not that simple, for us humans we learn as we experience stuff, you do something and you win, that means you did something good and you feel happy.
+						So this kind of reward-a-behaviour system sounds pretty cool. But again I don't have any knowlege in C#, let alone in deep learning.
+						I've seen many videos about Ai and experimented it on my pc, it's fun stuff, but hella complex if you know nothing about it.
+						
+						I've asked my friends how they would deal with such a problem.
+						And one suggestion was super interesting, and I'm going to quote him: 
+						
+						"Why don't you build a probability chart for the colors that looks like the contest condition for pokemon?"
+						
+						"Each played card increases the specific color, let's say you have played 4 red cards in a row. The Ai knows that you are aiming for red.
+						But if you suddently place a wild card and you set it to green, there's going to be a big spike that changes from red to green."
+						
+						I thought that was brilliant, so I started coding a mathematical function that would calculate that.
+		
