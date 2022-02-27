@@ -1,6 +1,9 @@
 # Uno-Statistics-Simulator
  Simulate thousands of UNO games and get the result data in Json format
 
+* Feb 27 2022
+
+This project is discontinued
 
 * May 12 2021
 
